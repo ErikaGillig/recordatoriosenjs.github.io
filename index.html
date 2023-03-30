@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Lista de Tareas y Notas</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Handlee&family=Merriweather:wght@300&family=Roboto+Condensed:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+
+
+  </head>
+  <body>
+    <header>
+      <div id="header-container">
+        <div id="clock"></div>
+        <div id="weather"><button class="heart-button" onclick="irAPagina()">❤️</button>
+      </div>
+    </header>
+    <script src="https://cdn.jsdelivr.net/npm/luxon@2.0.1/build/global/luxon.min.js"></script>
+
+<h1> Bienvenido a tu propio To do list </h1>
+    <div class="container">
+      <h1 id="title-todo">Lista de pendientes: </h1>
+      <form>
+        <label for="new-task">Cosas por hacer:</label>
+        <input type="text" id="new-task" />
+        <button type="submit" id="add-task">Añadir tarea</button>
+      </form>
+      <ul id="task-list"></ul>
+    </div>
+    <h2> Apartado de notas: </h2>
+    <div id="notes-container"></div>
+    <form>
+      <label for="note"><p>Ingresar una nota: </p></label>
+      <input type="text" id="note" name="note">
+      <button type="button" onclick="addNote()">Agregar</button>
+    </form>
+  </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
